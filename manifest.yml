@@ -1,0 +1,15 @@
+modules:
+  jiraServiceManagement:queuePage:
+    - key: scheduler-scheduler-ui-page
+      resource: main
+      resolver:
+        function: resolver
+      title: scheduler
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/scheduler-ui/build
+app:
+  id: ari:cloud:ecosystem::app/24886018-9879-48a9-9487-3483d43b3107
